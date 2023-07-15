@@ -46,3 +46,8 @@
 input:focus {
   border: solid 1px #826a69;
 }
+
+:root {
+--base-font-family:"M PLUS 2", var(--sys-font-family), sans-serif;
+--code-font-family:"M PLUS 1 Code", Menlo, Monaco, Consolas, "Courier New", monospace;
+}
