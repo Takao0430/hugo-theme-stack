@@ -188,8 +188,6 @@
         .article-title {
             font-size: 1.8rem;
             margin: 0;
-            letter-spacing: 2px;
-			margin-bottom: 10px;
         }
 
         &.has-image {
@@ -220,14 +218,12 @@
         margin-inline-start: calc((var(--card-padding)) * -1);
         padding-inline-start: calc(var(--card-padding) - var(--heading-border-size));
         border-inline-start: var(--heading-border-size) solid var(--accent-color);
-        margin-top: 50px;
     }
 
     figure {
         text-align: center;
 
         figcaption {
-            letter-spacing: 1px;
             font-size: 1.4rem;
             color: var(--card-text-color-secondary);
         }
@@ -237,7 +233,7 @@
         position: relative;
         margin: 1.5em 0;
         border-inline-start: var(--blockquote-border-size) solid var(--card-separator-color);
-        padding: 2px calc(var(--card-padding) - var(--blockquote-border-size));
+        padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
         background-color: var(--blockquote-background-color);
 
         .cite {
@@ -263,7 +259,7 @@
     code {
         color: var(--code-text-color);
         background-color: var(--code-background-color);
-        padding: 2px 8px;
+        padding: 2px 4px;
         border-radius: var(--tag-border-radius);
         font-family: var(--code-font-family);
     }
@@ -278,9 +274,6 @@
 
         figure {
             margin: 0;
-            a img {
-                border-radius: 15px;
-              }
         }
     }
 
@@ -301,7 +294,7 @@
             color: unset;
             border: none;
             background: none;
-            padding: 2px 8px;
+            padding: 0;
         }
     }
 
@@ -329,8 +322,8 @@
 
     .copyCodeButton {
         position: absolute;
-        top: calc(var(--card-padding) + 10px) !important;
-        right: calc(var(--card-padding) + 10px) !important;
+        top: calc(var(--card-padding));
+        right: calc(var(--card-padding));
         background: var(--card-background);
         border: none;
         box-shadow: var(--shadow-l2);
@@ -426,12 +419,3 @@
         overflow-y: hidden;
     }
 }
-
-@media (max-width: 812px) {
-    .article-content .gallery figure {
-      margin: 0 10px;
-    }
-    .article-content .gallery figure a img {
-        border-radius: 5px;
-    }
-  }

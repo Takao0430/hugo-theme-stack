@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cdn-cgi/
+Sitemap: {{ .Site.BaseURL }}/sitemap.xml

@@ -6,7 +6,7 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 
-.hamburger {
+ .hamburger {
     padding-top: 10px;
     display: inline-block;
     cursor: pointer;
@@ -195,6 +195,9 @@
         }
 
         &.current {
+            svg {
+                stroke-width: 2;
+            }
             a {
                 color: var(--accent-color);
                 font-weight: bold;
@@ -224,4 +227,11 @@
         stroke: var(--body-text-color);
         stroke-width: 1.33;
     }
+}
+
+@media (max-width: 812px) {
+  .menu {
+    border-radius: 15px;
+    margin: auto 15px;
+  }
 }

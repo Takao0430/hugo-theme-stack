@@ -32,12 +32,9 @@
                             {{- $Height = $thumbnail.Height -}}
                         {{- end -}}
                         
-                        <img src="{{ $Permalink }}" 
-                            width="{{ $Width }}"
-                            height="{{ $Height }}" 
-                            loading="lazy">
+                        <img src="{{ $Permalink }}"  width="{{ $Width }}" height="{{ $Height }}">
                     {{ else }}
-                        <img src="{{ $image.permalink }}" loading="lazy" />
+                        <img src="{{ $image.permalink }}"/>
                     {{ end }}
                 </div>
             {{ end }}

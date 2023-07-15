@@ -1,11 +1,3 @@
-/*!
-*   Hugo Theme Stack
-*
-*   @author: Jimmy Cai
-*   @website: https://jimmycai.com
-*   @link: https://github.com/CaiJimmy/hugo-theme-stack
-*/
-
 @import "breakpoints.scss";
 @import "variables.scss";
 @import "grid.scss";
@@ -23,6 +15,7 @@
 @import "partials/layout/list.scss";
 @import "partials/layout/404.scss";
 @import "partials/layout/search.scss";
+@import "partials/layout/countdown.scss";
 
 @import "general.scss";
 @import "custom.scss";

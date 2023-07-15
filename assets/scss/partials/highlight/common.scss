@@ -2,6 +2,14 @@
 .chroma {
     color: $color;
     background-color: $background-color;
+    border-radius: 15px;
+    padding: 16px !important;
+}
+
+@media (max-width: 812px) {
+  .chroma {
+    border-radius: 10px;
+  }
 }
 
 /* Other */
